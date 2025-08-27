@@ -2,10 +2,11 @@
   "name": "projectext",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --content \"./**/*.html\"",
-    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --content \"./**/*.html\" --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --content \"./**/*.{html,ejs}\"",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --content \"./**/*.{html,ejs}\" --watch",
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
