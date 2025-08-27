@@ -1,7 +1,7 @@
 {
   "name": "projectext",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is to make sure no scattered files of different extensions remain present",
   "main": "main.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --content \"./**/*.{html,ejs}\"",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hassan Ahmed",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^4.1.12"
@@ -18,5 +18,13 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HassanAhmed270/ExtensionFolder-maker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HassanAhmed270/ExtensionFolder-maker/issues"
+  },
+  "homepage": "https://github.com/HassanAhmed270/ExtensionFolder-maker#readme"
 }
