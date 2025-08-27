@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folder Sorter</title>
+  <link href="../output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-10 rounded-2xl shadow-2xl w-full max-w-lg text-center">
+
+    <!-- Heading -->
+    <h1 class="text-2xl md:text-3xl font-extrabold text-purple-600 mb-6">
+      Pick a folder, I’ll sort files into subfolders by type.
+    </h1>
+
+    <!-- Input + Button -->
+    <form action="/browse" method="get" class="flex items-center gap-3">
+      <input 
+        type="text" 
+        placeholder="Enter Folder Path" 
+        name="myValue"
+        id="folderInput"
+        class="input flex-1 p-3 rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
+      >
+      <button 
+        type="submit"
+        class="enter px-5 py-3 bg-purple-600 text-white font-bold rounded-xl shadow-md hover:bg-purple-700 transition">
+        Enter
+      </button>
+    </form>
+
+    <!-- Message box -->
+    <div class="msg mt-6 text-lg font-semibold text-green-600">
+      <%= msg %>
+    </div>
+
+  </div>
+</body>
+</html>
