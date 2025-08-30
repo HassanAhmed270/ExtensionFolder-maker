@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // ✅ Azure-compatible
 
 // view engine set karna (EJS ke liye)
 app.set("view engine", "ejs");
